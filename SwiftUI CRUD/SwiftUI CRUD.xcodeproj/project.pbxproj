@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD41BC0E25C7F9BB00AACCA1 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41BC0D25C7F9BB00AACCA1 /* ViewExtensions.swift */; };
+		FD41BC0F25C7F9BB00AACCA1 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41BC0D25C7F9BB00AACCA1 /* ViewExtensions.swift */; };
 		FD5F1EA425B685720051F0A3 /* OrangeButtonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F1EA325B685720051F0A3 /* OrangeButtonTextView.swift */; };
 		FD5F1EA525B685720051F0A3 /* OrangeButtonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F1EA325B685720051F0A3 /* OrangeButtonTextView.swift */; };
 		FD5F1EA625B685720051F0A3 /* OrangeButtonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F1EA325B685720051F0A3 /* OrangeButtonTextView.swift */; };
@@ -54,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD41BC0D25C7F9BB00AACCA1 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		FD5F1EA325B685720051F0A3 /* OrangeButtonTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeButtonTextView.swift; sourceTree = "<group>"; };
 		FD5F1EB025B687570051F0A3 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		FD5F1EB725B6879E0051F0A3 /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
@@ -100,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD41BC0C25C7F99200AACCA1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD41BC0D25C7F9BB00AACCA1 /* ViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FD5F1EA225B681070051F0A3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +130,7 @@
 		FD77358D25B673D4008F5847 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FD94EDF825B585A400DD1841 /* ContentView.swift */,
 				FD94EE2425B5D04200DD1841 /* DashboardView.swift */,
 				FD5F1EB025B687570051F0A3 /* CreateView.swift */,
 				FD5F1EB725B6879E0051F0A3 /* ShowView.swift */,
@@ -151,11 +163,11 @@
 		FD94EDF525B585A400DD1841 /* SwiftUI CRUD */ = {
 			isa = PBXGroup;
 			children = (
+				FD41BC0C25C7F99200AACCA1 /* Extensions */,
 				FD5F1ECC25B6C3870051F0A3 /* Models */,
 				FD5F1EA225B681070051F0A3 /* Components */,
 				FD77358D25B673D4008F5847 /* Screens */,
 				FD94EDF625B585A400DD1841 /* SwiftUI_CRUDApp.swift */,
-				FD94EDF825B585A400DD1841 /* ContentView.swift */,
 				FD94EDFA25B585A600DD1841 /* Assets.xcassets */,
 				FD94EDFF25B585A600DD1841 /* Info.plist */,
 				FD94EDFC25B585A600DD1841 /* Preview Content */,
@@ -326,6 +338,7 @@
 				FD94EDF725B585A400DD1841 /* SwiftUI_CRUDApp.swift in Sources */,
 				FD5F1EB125B687570051F0A3 /* CreateView.swift in Sources */,
 				FD5F1EBF25B687AC0051F0A3 /* UpdateView.swift in Sources */,
+				FD41BC0E25C7F9BB00AACCA1 /* ViewExtensions.swift in Sources */,
 				FD5F1EB825B6879E0051F0A3 /* ShowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +351,7 @@
 				FD5F1ECF25B6C39A0051F0A3 /* Employee.swift in Sources */,
 				FD5F1EB925B6879E0051F0A3 /* ShowView.swift in Sources */,
 				FD5F1EC025B687AC0051F0A3 /* UpdateView.swift in Sources */,
+				FD41BC0F25C7F9BB00AACCA1 /* ViewExtensions.swift in Sources */,
 				FD94EE2625B5D04200DD1841 /* DashboardView.swift in Sources */,
 				FD94EE0925B585A600DD1841 /* SwiftUI_CRUDTests.swift in Sources */,
 				FD5F1EB225B687570051F0A3 /* CreateView.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 struct DeleteView: View {
     @EnvironmentObject var employeeList: EmployeeList
     @State private var empIdTF = ""
+    @State private var showingAlert = false
     
     var body: some View {
         VStack {
@@ -23,10 +24,14 @@ struct DeleteView: View {
                     self.employeeList.employees.removeAll { (employee) -> Bool in
                         employee.emplId == self.empIdTF
                     }
+                    showingAlert = true
                 }
             }, label: {
                 OrangeButtonTextView(buttonText: "Delete")
             })
+        }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Success"), message: Text("Employee Details Deleted"), dismissButton: .default(Text("Ok")))
         }
     }
 }

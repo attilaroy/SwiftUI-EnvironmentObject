@@ -11,6 +11,7 @@ struct CreateView: View {
     @EnvironmentObject var employeeList: EmployeeList
     @State private var empIdTF = ""
     @State private var empNameTF = ""
+    @State private var showingAlert = false
     
     var body: some View {
         VStack {
@@ -24,8 +25,15 @@ struct CreateView: View {
                 .padding([.horizontal, .bottom], 30)
             Button(action: {
                 self.employeeList.employees.append(Employee(emplId: empIdTF, empName: empNameTF))
+                self.showingAlert = true
             }, label: {
                 OrangeButtonTextView(buttonText: "Create")
+            })
+        }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Success"), message: Text("Employee Details Added"), dismissButton: .default(Text("Ok")) {
+                self.empIdTF = ""
+                self.empNameTF = ""
             })
         }
     }
